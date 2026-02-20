@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Open+Sans&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #05695c;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vh;
+    width:98%;
+    font-family:"roboto" ;
+
+}
+header ol{
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-around;
+
+}
+header img{
+    height: 23px;
+}
+main {
+    display: flex;
+    height: 85vh;
+}
+main .a{
+    width: 35%;
+    display: grid;
+    grid-template-rows: 70% auto;
+    
+   
+}
+main .a .top{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+main .a .top p{
+    writing-mode: vertical-lr;
+    font-family: roboto;
+    font-size: medium;
+    margin-right: 2rem;
+}
+main .a .top h1{
+    font-size: 3.5rem;
+    font-family: roboto;
+    margin-left: 1.5rem;
+}
+main .a .bottom{
+background-color: white;
+color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position:relative;
+}
+main .a .bottom  span{
+    background-color:#212121;
+    color:white;
+    font-size:medium;
+    font-size: 0.8rem;
+    font-family: inter;
+    padding: 0.5rem;
+    position:absolute;
+    right:0;
+    top: -10%;
+    writing-mode: vertical-lr;
+ }
+main .a .bottom h4{
+    font-size: 1.5rem;
+}
+main .b{
+    width:65%;
+    display: grid;
+    grid-template-rows: 85% auto;
+
+}
+main .b .left{
+    display: flex;
+    justify-content: center;
+align-items: center;
+
+}
+main .b  .left ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+}
+ main .b .left ul li{
+    
+font-size:0.9rem;
+font-family: roboto;
+}
+
+main .b .left ul h1{
+    font-size: 2rem;
+    font-family: roboto;
+}
+
+main .b img{
+    height: 25rem;
+    margin-right:7rem ;
+    filter: drop-shadow(5px 4px 2px #8E24AA);
+}
+main .b .down{
+    font-weight:medium;
+    font-family: roboto;
+    display: flex;
+    justify-content: flex-end;
+    width:85%;
+}
+ .underline:hover{
+    cursor: pointer;
+    text-decoration: underline;
+ }
+ /* this is for mobile view*/
+ @media(max-width:450px){
+body{
+    background-color: #689F38;
+}
+}
+ 
+    
